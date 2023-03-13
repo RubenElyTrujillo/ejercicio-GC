@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+$color-1: #000000;
+$color-2: #EC2200;
+$color-3: #DBCDC0;
+$color-4: #FFFFFF;
+$color-5: #232323;
+$color-6: #353535;
+$color-7: #68ACE9;
+$color-8: #03A9F4;
+$color-9: #209AED;
+$color-10:#FF3D00;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+.block{
+    position: relative;
+}
+.holder{
+    max-width: 1330px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container-fluid{
+    padding: 0 15px;
+}
+img{
+    position: relative !important;
+    display: block;
+}
+
+@import './navbar/navbar';
+@import './cover/cover';
+@import './sports/sports';
+@import './footer/footer';

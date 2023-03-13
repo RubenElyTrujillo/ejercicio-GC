@@ -1,0 +1,109 @@
+.block.sports{
+    padding: 30px 0;
+    background-color: $color-5;
+    border-bottom: 3px solid $color-6;
+    .title{
+        max-width: 516px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        h2{
+            font-family: 'Exo', sans-serif;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: $color-4;
+            font-weight: lighter;
+        }
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: 145px 145px;
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-content: center;
+        margin-top: 20px;
+        button{
+            background-color: transparent;
+            border: none;
+            max-width: 245px;
+            width: 100%;
+            cursor: pointer;
+            transition: transform 0.2s ease-out;
+            .content{
+                position: relative;
+                .text{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    max-width: 245px;
+                    width: 100%;
+                    background: red;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    h3{
+                        font-family: 'Exo', sans-serif;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: $color-4;
+                        font-weight: normal;
+                        padding: 10px;
+                    }
+                }
+            }
+            &:hover{
+                .content{
+                    .text{
+                        opacity: 1;
+                    }
+                }
+            }
+            &.active{
+                .content{
+                    .text{
+                        opacity: 1;
+                    }
+                }
+            }
+            span{
+                font-family: 'Exo', sans-serif;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: $color-4;
+                font-weight: lighter;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .block.sports{
+        padding: 60px 0;
+        background-color: $color-5;
+        .title{
+            h2{
+                font-size: 35px;
+            }
+        }
+        .buttons{
+            grid-template-columns: 245px 245px 245px 245px;
+            button{
+                max-width: 245px;
+                .content{
+                    .text{
+                        h3{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

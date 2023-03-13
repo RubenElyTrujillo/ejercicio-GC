@@ -1,0 +1,89 @@
+.block.cover{
+    
+    .background{
+        max-width: 100vw;
+        width: 100%;
+        height: 670px;
+        img{
+            object-fit: cover;
+        }
+    }
+    .holder{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        .title{
+            margin-top: 70px;
+            max-width: 112px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: 'Exo', sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $color-4;
+            text-shadow: 1px 1px 5px $color-1;
+        }
+        .count{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            .time{
+                max-width: 84px;
+                width: 100%;
+                padding: 10px;
+                border-radius: 50%;
+                border: 5px solid $color-3;
+                font-size: 17px;
+                text-align: center;
+                margin: 0 10px;
+                font-family: 'Exo', sans-serif;
+                text-transform: uppercase;
+                color: $color-4;
+                font-weight: bold;
+                text-shadow: 1px 1px 5px $color-1;
+                span{
+                    text-transform: uppercase;
+                    display: block;
+                }
+            }
+        }
+        .video{
+            max-width: 640px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            background: black;
+            .youtube{
+                display: block;
+                iframe{
+                    width: 100%;
+                    transition: transform 0.2s ease-out;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .block.cover{
+        .holder{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            .title{
+                margin-top: 100px;
+                max-width: 112px;
+            }
+            .count{
+                margin-top: 20px;
+                .time{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
